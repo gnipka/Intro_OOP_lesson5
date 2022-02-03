@@ -6,8 +6,8 @@ namespace Intro_OOP_lesson5
     {
         static void Main(string[] args)
         {
-            var a = new ValueRatioNumber(3, 4);
-            var b = new ValueRatioNumber(3, 5);
+            var a = new ValueRatioNumber(19, 20);
+            var b = new ValueRatioNumber(3, 20);
             var c = a == b;
             c.EqualsRatioNumber();
             var d = a != b;
@@ -20,6 +20,13 @@ namespace Intro_OOP_lesson5
             g.EqualsRatioNumber();
             var h = a <= b;
             h.EqualsRatioNumber();
+            var i = a + b;
+            i.Compute();
+            var j = a - b;
+            j.Compute();
+            var k = new ValueRatioNumber(5, 20);
+            var l = a - b + k;
+            l.Compute();
         }
     }
 }

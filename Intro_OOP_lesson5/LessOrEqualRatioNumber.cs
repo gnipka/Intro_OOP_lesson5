@@ -24,7 +24,6 @@ namespace Intro_OOP_lesson5
 
         public override bool EqualsRatioNumber()
         {
-
             var a = _A.Compute();
             var b = _B.Compute();
             var coef = a.Denumerator * b.Denumerator;

@@ -6,26 +6,23 @@ using System.Threading.Tasks;
 
 namespace Intro_OOP_lesson5
 {
-    class MoreOrEqualRatioNumber : RatioNumber
+    class IncrementRatioNumber : RatioNumber
     {
         private readonly RatioNumber _A;
         private readonly RatioNumber _B;
 
-        public MoreOrEqualRatioNumber(RatioNumber a, RatioNumber b)
+        public IncrementRatioNumber(RatioNumber a)
         {
             _A = a;
-            _B = b;
         }
         public override ValueRatioNumber Compute()
         {
-            throw new NotImplementedException();
+            var a = _A.Compute();
+            return new ValueRatioNumber(a.Numerator + a.Denumerator, a.Denumerator).Compute();
         }
         public override bool EqualsRatioNumber()
         {
-            var a = _A.Compute();
-            var b = _B.Compute();
-            var coef = a.Denumerator * b.Denumerator;
-            return coef / a.Denumerator * a.Numerator >= coef / b.Denumerator * b.Numerator;
+            throw new NotImplementedException();
         }
     }
 }
