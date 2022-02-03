@@ -9,7 +9,6 @@ namespace Intro_OOP_lesson5
     class IncrementRatioNumber : RatioNumber
     {
         private readonly RatioNumber _A;
-        private readonly RatioNumber _B;
 
         public IncrementRatioNumber(RatioNumber a)
         {

@@ -19,6 +19,16 @@ namespace Intro_OOP_lesson5
         public static RatioNumber operator ++(RatioNumber a) => new IncrementRatioNumber(a);
         public static RatioNumber operator --(RatioNumber a) => new DecrementRatioNumber(a);
 
+        public static implicit operator float(RatioNumber a)
+        {
+            var b = a.Compute();
+            return (float)(b.Numerator / b.Denumerator);
+        }
+        public static explicit operator int(RatioNumber a)
+        {
+            var b = a.Compute();
+            return (int)(b.Numerator / b.Denumerator);
+        }
         public abstract bool EqualsRatioNumber();
         public abstract ValueRatioNumber Compute();
     }
