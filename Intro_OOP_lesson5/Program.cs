@@ -26,8 +26,13 @@ namespace Intro_OOP_lesson5
             j.Compute();
             var k = new ValueRatioNumber(5, 20);
             var l = a - b + k;
-            int m = (int)l;
-            float n = (float)l;
+            l.Compute();
+            var m = a * b;
+            m.Compute();
+            var n = a / b;
+            n.Compute();
+            var p = a % b;
+            p.Compute();
         }
     }
 }

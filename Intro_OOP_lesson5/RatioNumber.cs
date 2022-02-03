@@ -18,6 +18,10 @@ namespace Intro_OOP_lesson5
         public static RatioNumber operator -(RatioNumber a, RatioNumber b) => new DiffRatioNumber(a, b);
         public static RatioNumber operator ++(RatioNumber a) => new IncrementRatioNumber(a);
         public static RatioNumber operator --(RatioNumber a) => new DecrementRatioNumber(a);
+        public static RatioNumber operator *(RatioNumber a, RatioNumber b) => new MulRatioNumber(a, b);
+        public static RatioNumber operator /(RatioNumber a, RatioNumber b) => new DivRatioNumber(a, b);
+        public static RatioNumber operator %(RatioNumber a, RatioNumber b) => new RestRatioNumber(a, b);
+
 
         public static implicit operator float(RatioNumber a)
         {
